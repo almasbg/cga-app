@@ -6,5 +6,5 @@ RUN npm config set registry http://registry.npmjs.org/
 RUN npm install
 COPY --chown=node:node . .
 USER node
-EXPOSE 80
+EXPOSE 8080
 CMD [ "node", "index.js" ]
